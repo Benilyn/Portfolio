@@ -4,6 +4,10 @@ body {
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 85%;
+    margin: 30px auto;
+    color: lightgray;
+    font-size: larger;
 }
 
 header {
@@ -12,8 +16,31 @@ header {
 
 header p {
     text-align: justify;
-    
+    width: 90%;
+    margin: 25px auto;
 }
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container {
+    flex: 1;
+}
+
+.nav-list li {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
 
 h1 {
     text-align: center;
@@ -26,6 +53,11 @@ h2 {
 
 ul {
     padding-left: 0;
+    list-style: none;
+}
+
+a {
+    color: slategray;
 }
 
 
@@ -34,14 +66,8 @@ ul {
     margin: 0 5px;
 }
 
-.body-container {
-    display: flex;
-    width: 85%;
-    margin: auto;
-}
-
 #projects-container {
-   flex: 2;
+   margin: 20px 0;
 }
 
 #projects {
@@ -53,7 +79,6 @@ ul {
 
 .project {
     flex: 1;
-    border: groove lightgray;
 }
 
 .project p {
@@ -61,11 +86,15 @@ ul {
 }
 
 #skills {
-    flex: 1;
+    border-top: solid lightslategray;
+    margin-bottom: 20px;
 }
 
 #skills ul {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 footer {
